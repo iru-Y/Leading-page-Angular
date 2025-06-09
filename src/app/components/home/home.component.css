@@ -1,0 +1,14 @@
+.headline{
+    position: absolute;
+    top: 20;
+    font-family: 'Roboto', sans-serif;
+    span {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    h1{
+        font-size: 72px;
+        font-weight: 900;
+    }
+}
