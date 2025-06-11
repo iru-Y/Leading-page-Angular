@@ -1,3 +1,56 @@
 .form-section {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 120px;
+    gap: 50px;
+    color: white;
+    background-color: var(--secondary-color);
+
+    h3{
+        font-size: 36px;
+        font-weight: 600;
+        color: white;
+
+    }
+    p{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .text {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+
+    form {
+        flex: 1;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    input {
+        background: none;
+        border: none;
+        border-bottom: 1px solid white;
+        justify-content: flex-start;
+        width: 100%;
+        height: 60px;
+    }
+}
+
+app-btn-primary{
+    margin-top: 40px;
+}
+
+@media screen {
+    .form-section{
+        flex-direction: row;
+        justify-content: flex-start;
+    }
 }

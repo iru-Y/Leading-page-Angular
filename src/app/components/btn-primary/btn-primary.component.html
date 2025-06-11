@@ -1,5 +1,8 @@
 <button (click)="submit()"
-    [class]="'btn primary disabled'"
+    class="btn"
+    [class.primary]="variant === 'primary'"
+    [class.secondary]="variant === 'secondary'"
+    [class.disabled]="disabled"
     [disabled]="disabled" 
 >
     @if (!loading) {

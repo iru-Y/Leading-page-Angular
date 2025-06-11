@@ -1,5 +1,4 @@
-<section>
-
+<section class="form-section">
     <div class="text" >
         <h3>
             Fique por dentro das tendências
@@ -9,12 +8,16 @@
         </p>
     </div>
 
-    <form action="">
-        <label for="name">Name</label>
+    <form [formGroup]="newsLetterForm">
+        <label for="name" formControlName="name">Name</label>
         <input type="text" id="name">
-        <label for="email">Email</label>
+        <label for="email" formControlName="email">Email</label>
         <input type="text" id="email">
-    <app-btn-primary></app-btn-primary>
+    <app-btn-primary btn-text="se inscreva"
+    variant="secondary"
+    (submit)="onSubmit()"
+    [disabled]="!newsLetterForm.valid"
+    ></app-btn-primary>
 </form>
 
 </section>
